@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Basic Settings">
+<CheckBoxPreference
+    android:key="checkbox"
+    android:summary="Tap to check if on or off"
+    android:title="Checkbox Preference" />
+<RingtonePreference
+    android:key="ringtone"
+    android:showDefault="true"
+    android:showSilent="true"
+    android:summary="Pick a ringtone you like"
+    android:title="Ringtone Preference" />
+<EditTextPreference
+    android:dialogTitle="Enter a text"
+    android:key="text"
+    android:summary="Click to show a text entry dialog"
+    android:title="EditText Preference" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Advanced Settings">
+    <ListPreference
+    android:dialogTitle="Select duration"
+    android:entries="@array/settings_list_preference_titles"
+    android:entryValues="@array/settings_list_preference_values"
+    android:key="list"
+    android:summary="Click to show a list to choose from"
+    android:title="List Preference" />
+    <!--<MultiSelectListPreference
+            android:dialogTitle="Dialog title"
+            android:entries="@array/settings_multi_select_list_preference_titles"
+            android:entryValues="@array/settings_multi_select_list_preference_values"
+            android:key="multi_select_list"
+            android:title="Multiselect title" />-->
+<SwitchPreference
+    android:key="switch"
+    android:title="Switch Preference"
+    android:summary="Click to switch on or off"
+    android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Help">
+        <Preference   android:summary="Report technical issues or suggest new features"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>

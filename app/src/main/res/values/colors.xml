@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff9100</color>
+    <color name="btColor">#FFFFFF</color>
+    <color name="btColor1">#154c0d</color>
+    <color name="btColor2">#f94402</color>
+    <color name="btColor3">#000000</color>
+    <color name="btColor4">#890510</color>
+    <color name="btColor5">#6d0254</color>
+    <color name="btColor6">#00574B</color>
+    <color name="btColor7">#400ba3</color>
+    <color name="btColor8">#20b2db</color>
+    <color name="btColor9">#20db36</color>
+    <color name="btColor10">#dfed23</color>
+    <color name="btColor11">#770877</color>
+    <color name="btColor12">#13f2d0</color>
+    <color name="btColor13">#8e838b</color>
+    <color name="btColor14">#008577</color>
+
+
+</resources>

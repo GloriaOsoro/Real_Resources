@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/rl"
+    android:background="@drawable/first">
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/button1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:background="@drawable/rounded_button"
+        android:drawableEnd="@drawable/ic_arrow_forward_black_24dp"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="50px"
+        android:text="Get Started"
+        android:paddingRight="50px"
+        android:textSize="25sp"
+        />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Connect with buyers and sellers without haste"
+        android:textColor="#FFFFFF"
+        android:layout_margin="100dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|center_vertical"
+        android:textStyle="bold"
+
+        />
+
+    />
+
+    />
+
+</RelativeLayout>

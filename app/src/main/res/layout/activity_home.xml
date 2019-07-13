@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:gravity="start|center_vertical"
+        android:text="REAL RESOURCES"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_settings_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView900"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_menu_black_24dp" />
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView9"
+        android:layout_marginTop="30dp"
+        android:hint="Search Your Product"
+        android:iconifiedByDefault="false"></SearchView>
+
+    <requestFocus />
+    <!--  <ListView
+          android:id="@+id/listview"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:layout_below="@+id/search" />-->
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Categories"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView30"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/btColor1"
+                android:gravity="center|center_vertical"
+                android:shadowDy="@android:integer/config_longAnimTime"
+                android:text="Automobiles and spares"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/btColor2"
+                android:gravity="center|center_vertical"
+                android:shadowDy="@android:integer/config_longAnimTime"
+                android:text="Chemicals"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/btColor3"
+                android:gravity="center|center_vertical"
+                android:shadowDy="@android:integer/config_longAnimTime"
+                android:text="Clothing and Textiles"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/btColor4"
+                android:gravity="center|center_vertical"
+                android:shadowDy="@android:integer/config_longAnimTime"
+                android:text="Commercial and Business Services"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/btColor5"
+                android:gravity="center|center_vertical"
+                android:shadowDy="@android:integer/config_longAnimTime"
+                android:text="Construction and Real Estate"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/btColor6"
+                android:gravity="center|center_vertical"
+                android:shadowDy="@android:integer/config_longAnimTime"
+                android:text="Consumer Electronics"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/btColor7"
+                android:gravity="center|center_vertical"
+                android:shadowDy="@android:integer/config_longAnimTime"
+                android:text="Electric Components/Equipments"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/btColor8"
+                android:gravity="center|center_vertical"
+                android:shadowDy="@android:integer/config_longAnimTime"
+                android:text="Food and Agriculture"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/btColor9"
+                android:gravity="center|center_vertical"
+                android:shadowDy="@android:integer/config_longAnimTime"
+                android:text="Furniture and Finishings"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/btColor10"
+                android:gravity="center|center_vertical"
+                android:shadowDy="@android:integer/config_longAnimTime"
+                android:text="Hardware"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/btColor11"
+                android:gravity="center|center_vertical"
+                android:shadowDy="@android:integer/config_longAnimTime"
+                android:text="IT/Telecom/Electronics"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/btColor12"
+                android:gravity="center|center_vertical"
+                android:shadowDy="@android:integer/config_longAnimTime"
+                android:text="Minerals and Metals"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/btColor13"
+                android:gravity="center|center_vertical"
+                android:shadowDy="@android:integer/config_longAnimTime"
+                android:text="Office and School Supplies"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/btColor14"
+                android:gravity="center|center_vertical"
+                android:shadowDy="@android:integer/config_longAnimTime"
+                android:text="Printing and Publishing"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/btColor3"
+                android:gravity="center|center_vertical"
+                android:shadowDy="@android:integer/config_longAnimTime"
+                android:text="Security and Protection"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        android:layout_below="@+id/horizontalScrollView"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView30"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ln178"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+
+
+                >
+
+                <TextView
+                    android:id="@+id/textView300"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/horizontalScrollView"
+                    android:layout_marginLeft="20dp"
+                    android:text="Top Products"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/horizontalScrollView"
+                    android:layout_marginLeft="80dp"
+                    android:layout_toRightOf="@+id/textView300"
+                    android:text="Show all"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln1"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:id="@+id/cbPrevPicView1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/android" />
+
+
+                <ImageView
+                    android:id="@+id/cbNextPicView2"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/honor" />
+
+                <ImageView
+                    android:id="@+id/cbNextPicView3"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/rj45" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln10"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="ksh.1,699-1,899 samsung Earbuds"
+                    android:textColor="#000000" />
+
+                <TextView
+
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:text="ksh.1,699-1,899 samsung Earbuds"
+                    android:textColor="#000000" />
+
+                <TextView
+
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="ksh.1,699-1,899 samsung Earbuds"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln101"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3009"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Popular Products"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView30009"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textView3009"
+                    android:text="Show all"
+                    android:textColor="#000000"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln2"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/cbPrevPicView11"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/android" />
+
+                <ImageView
+                    android:id="@+id/cbNextPicView21"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/honor" />
+
+                <ImageView
+                    android:id="@+id/cbNextPicView31"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/rj45" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln3"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:id="@+id/cbPrevPicView13"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/android" />
+
+                <ImageView
+                    android:id="@+id/cbNextPicView23"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/honor" />
+
+                <ImageView
+                    android:id="@+id/cbNextPicView33"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/rj45" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln4"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/cbPrevPicView14"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/android" />
+
+                <ImageView
+                    android:id="@+id/cbNextPicView24"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/honor" />
+
+                <ImageView
+                    android:id="@+id/cbNextPicView134"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/rj45" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln5"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/cbPrevPicView"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/android" />
+
+                <ImageView
+                    android:id="@+id/cbNextPicView"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/honor" />
+
+                <ImageView
+                    android:id="@+id/cbNextPicView1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/rj45" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:itemBackground="@color/btColor"
+        android:layout_marginStart="0dp"
+        app:menu="@menu/navigation" />
+
+
+</RelativeLayout>
