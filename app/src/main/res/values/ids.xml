@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ic_home_black_24dp" type="id"></item>
+    <item name="ic_favorite_black_24dp" type="id"></item>
+    <item name="ic_shopping_cart_black_24dp" type="id"></item>
+    <item name="ic_perm_identity_black_24dp" type="id"></item>
+</resources>

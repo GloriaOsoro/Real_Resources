@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/second"
+    tools:context=".Quote">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:gravity="start|center_vertical"
+        android:text="REAL RESOURCES"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/imageView900"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+       />
+    <ImageView
+        android:id="@+id/imageView09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_settings_black_24dp" />
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView09"
+        android:layout_marginTop="50dp"
+        android:hint="Search Your Product"
+        android:iconifiedByDefault="false"></SearchView>
+
+    <EditText
+        android:id="@+id/looking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="What are you looking for?"
+        android:inputType="text"
+         />
+    />
+    <EditText
+        android:id="@+id/quality"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/looking"
+        android:hint="Quality"
+        android:layout_marginTop="50dp"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/unit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/quality"
+        android:layout_marginTop="50dp"
+        android:hint="Units"
+        android:layout_below="@+id/looking"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/additional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_below="@+id/quality"
+        android:hint="Additional notes"
+        android:inputType="text"
+       />
+    android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/additional"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="58dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/btColor2"
+        android:gravity="center|center_vertical"
+        android:padding="5px"
+        android:shadowDy="@android:integer/config_longAnimTime"
+        android:text="SUMBIT"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:itemBackground="@color/btColor"
+        android:layout_marginStart="0dp"
+        app:menu="@menu/navigation" />
+
+</RelativeLayout>

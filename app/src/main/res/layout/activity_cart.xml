@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:gravity="start|center_vertical"
+        android:text="Cart"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_arrow_back_black_24dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/button1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:text="PROCEED TO CHECKOUT"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/sandisk"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:src="@drawable/sandisk"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="15dp"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/sandisktxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sandisk"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="35dp"
+        android:text="Sandisk SD Card 1TB"
+        android:textStyle="bold"
+        android:textColor="@color/btColor3"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/sandisktxt2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sandisk"
+        android:layout_below="@+id/sandisktxt"
+        android:layout_marginTop="0dp"
+        android:text="SanDisk Ultra 1 TB MicroSDXC UHS-I Memory Card."
+        android:textColor="@color/btColor3"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sandisktxt2"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/sandisk"
+        android:layout_weight="1"
+        android:text="ksh.999-1,899 "
+        android:textColor="@color/btColor2" />
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="195dp"
+        android:layout_toRightOf="@+id/price"
+        android:src="@drawable/ic_add_box_black_24dp" />
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/add"
+        android:layout_weight="1"
+        android:text="10"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="193dp"
+        android:textColor="@color/btColor3"
+        android:textSize="20dp" />
+    <ImageView
+        android:id="@+id/min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="195dp"
+        android:layout_toRightOf="@+id/num"
+        android:src="@drawable/ic_indeterminate_check_box_black_24dp" />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_toRightOf="@+id/sandisktxt2"
+        android:src="@drawable/ic_cancel_black_24dp"
+        android:layout_marginLeft="50dp"/>
+
+    <ImageView
+        android:id="@+id/hpprinter"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:src="@drawable/hp_printer"
+        android:layout_below="@+id/sandisk"
+        android:layout_marginLeft="15dp"
+        android:padding="5dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/hpprintertxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/hpprinter"
+        android:layout_below="@+id/price"
+        android:layout_marginTop="35dp"
+        android:text="HP Printer"
+        android:textStyle="bold"
+        android:textColor="@color/btColor3"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/hpprintertxt2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/hpprinter"
+        android:layout_below="@+id/hpprintertxt"
+        android:layout_marginTop="0dp"
+        android:text="HP OfficeJet 3830 All-in-One Printer"
+        android:textColor="@color/btColor3"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hpprintertxt2"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/hpprinter"
+        android:layout_weight="1"
+        android:text="ksh.7,999-10,000 "
+        android:textColor="@color/btColor2" />
+
+    <ImageView
+        android:id="@+id/add1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/hpprintertxt2"
+        android:layout_toRightOf="@+id/price2"
+        android:src="@drawable/ic_add_box_black_24dp" />
+
+    <TextView
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/add1"
+        android:layout_weight="1"
+        android:text="15"
+        android:layout_marginLeft="7dp"
+        android:layout_below="@+id/hpprintertxt2"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/btColor3"
+        android:textSize="20dp" />
+    <ImageView
+        android:id="@+id/min1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_below="@+id/hpprintertxt2"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/num1"
+        android:src="@drawable/ic_indeterminate_check_box_black_24dp" />
+
+    <ImageView
+        android:id="@+id/delete1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="270dp"
+        android:layout_toRightOf="@+id/hpprintertxt2"
+        android:src="@drawable/ic_cancel_black_24dp" />
+    <TextView
+        android:id="@+id/totalprice"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price2"
+        android:text="Total Price"
+        android:textColor="#000000"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/Delivery"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Delivery Cost"
+        android:textColor="#000000"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/totalprice"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+
+        />
+    <TextView
+        android:id="@+id/gtotal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Grand Total"
+        android:textColor="#000000"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/Delivery"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/enquireprice"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="52dp"
+        android:layout_toRightOf="@id/totalprice"
+        android:text="Enquire Price"
+        android:textColor="@color/btColor3" />
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enquireprice"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/totalprice"
+        android:text="Ksh 300"
+        android:textColor="@color/btColor3"
+        />
+    <TextView
+        android:id="@+id/enqnow"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/money"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/totalprice"
+        android:text="Enquire Now"
+        android:textColor="@color/btColor2"
+        />
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:itemBackground="@color/btColor"
+        android:layout_marginStart="0dp"
+        app:menu="@menu/navigation" />
+
+
+</RelativeLayout>

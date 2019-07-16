@@ -5,13 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Settings">
-<include
+<!--<include
     android:id="@+id/mToolbar"
-    android:layout="@layout/toolbar"/>
-<FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/FragmentContainer"></FrameLayout>
-
+    android:layout="@layout/toolbar"/>-->
 
 </LinearLayout>

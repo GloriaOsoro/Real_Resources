@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Real Sources</string>
+    <string name="radio_station">Pickup at station</string>
+    <string name="radio_Location">Deliver to Location</string>
+    <string name="pesa">MPESA</string>
+    <string name="pay">PayPal</string>
 </resources>

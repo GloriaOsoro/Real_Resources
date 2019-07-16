@@ -20,26 +20,19 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:id="@+id/imageViewS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="350dp"
         android:layout_marginTop="50dp"
         android:src="@drawable/ic_settings_black_24dp" />
 
-    <ImageView
-        android:id="@+id/imageView900"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/ic_menu_black_24dp" />
 
-    <SearchView
+       <SearchView
         android:id="@+id/search"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageView9"
+        android:layout_below="@id/imageViewS"
         android:layout_marginTop="30dp"
         android:hint="Search Your Product"
         android:iconifiedByDefault="false"></SearchView>
@@ -61,6 +54,15 @@
         android:textColor="#000000"
         android:textSize="20dp"
         android:textStyle="bold" />
+    <Button
+        android:id="@+id/request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView30"
+        android:backgroundTint="@color/btColor"
+        android:layout_marginTop="160dp"
+        android:text="Request Quote"
+        android:textColor="@color/btColor2" />
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
@@ -101,6 +103,7 @@
                 android:shadowDy="@android:integer/config_longAnimTime"
                 android:text="Chemicals"
                 android:textColor="#FFFFFF" />
+
 
             <Button
                 android:id="@+id/button3"
