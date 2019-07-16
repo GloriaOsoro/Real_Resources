@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/courier_deliver_kit8_nety"
     tools:context=".Shipping">
     <TextView
         android:id="@+id/textView3"
@@ -86,21 +87,23 @@
     <EditText
         android:id="@+id/loc"
         android:layout_width="263dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginLeft="42dp"
         android:layout_marginTop="250dp"
         android:layout_toRightOf="@id/textView4"
         android:hint="Please pick a location"
+        android:background="@drawable/srect"
         android:inputType="text"
         android:textStyle="italic" />
     <EditText
         android:id="@+id/sta"
         android:layout_width="263dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginLeft="42dp"
         android:layout_marginTop="300dp"
         android:layout_toRightOf="@id/textView4"
         android:hint="Pickup station"
+        android:background="@drawable/srect"
         android:inputType="text"
         android:textStyle="italic" />
 
@@ -116,11 +119,13 @@
     <EditText
         android:id="@+id/more"
         android:layout_width="263dp"
-        android:layout_height="wrap_content"
+        android:layout_height="140dp"
         android:layout_marginLeft="42dp"
         android:layout_marginTop="370dp"
         android:layout_toRightOf="@id/textView4"
         android:hint="Any additional notes?"
+        android:gravity="top"
+        android:background="@drawable/srect"
         android:inputType="text"
         android:textStyle="italic" />
 
@@ -138,7 +143,7 @@
         android:paddingLeft="50px"
         android:text="COMPLETE ORDER"
         android:paddingRight="50px"
-        android:textSize="25sp"
+        android:textSize="18sp"
         />
 
 

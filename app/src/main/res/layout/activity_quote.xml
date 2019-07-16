@@ -34,8 +34,10 @@
         android:src="@drawable/ic_settings_black_24dp" />
     <SearchView
         android:id="@+id/search"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:background="@drawable/prect"
+        android:layout_marginLeft="20dp"
         android:layout_below="@id/imageView09"
         android:layout_marginTop="50dp"
         android:hint="Search Your Product"
@@ -43,49 +45,58 @@
 
     <EditText
         android:id="@+id/looking"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
         android:layout_below="@id/search"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rrect"
         android:hint="What are you looking for?"
         android:inputType="text"
-         />
+        android:padding="10dp" />
     />
     <EditText
         android:id="@+id/quality"
         android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rrect"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
         android:layout_below="@+id/looking"
+        android:padding="10dp"
         android:hint="Quality"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:inputType="text"
         />
+
     <EditText
         android:id="@+id/unit"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/quality"
-        android:layout_marginTop="50dp"
-        android:hint="Units"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
         android:layout_below="@+id/looking"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/quality"
+        android:background="@drawable/rrect"
+        android:hint="Units"
         android:inputType="text"
-        />
+        android:padding="10dp" />
     <EditText
         android:id="@+id/additional"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="50dp"
+        android:layout_width="370dp"
+        android:layout_height="140dp"
+        android:background="@drawable/rrect"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
         android:layout_below="@+id/quality"
+        android:padding="10dp"
         android:hint="Additional notes"
+
+
         android:inputType="text"
        />
-    android:textStyle="italic"/>
+
 
     <Button
         android:id="@+id/button2"
@@ -93,8 +104,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/additional"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="58dp"
-        android:layout_marginRight="34dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/rounded_button"
         android:backgroundTint="@color/btColor2"

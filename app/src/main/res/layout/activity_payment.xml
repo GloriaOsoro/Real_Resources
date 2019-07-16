@@ -37,26 +37,36 @@
         android:textSize="20dp"
         android:textStyle="bold" />
 
-    <RadioButton
-        android:id="@+id/pay"
+    <RadioGroup
+        android:id="@+id/radio"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:checked="true"
-        android:layout_marginLeft="30dp"
-        android:text="@string/pay"
+        android:layout_height="157dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
         android:layout_toRightOf="@+id/textViewp"
-        android:textSize="20dp" />
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@+id/textViewp"
+            android:checked="true"
+            android:text="@string/pay"
+            android:textSize="20dp" />
 
         <RadioButton
             android:id="@+id/pesa"
-            android:layout_marginTop="100dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
+            android:layout_marginTop="60dp"
             android:layout_toRightOf="@+id/pay"
             android:text="@string/pesa"
-            android:textSize="20dp"/>
+            android:textSize="20dp" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/textViewpu"
@@ -73,10 +83,12 @@
     <EditText
         android:id="@+id/username"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/prect"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="200dp"
+        android:padding="10dp"
         android:hint="Full Names"
         android:inputType="textPersonName"
        />
@@ -84,59 +96,71 @@
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/prect"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="260dp"
         android:layout_marginRight="50dp"
+        android:padding="10dp"
         android:hint="Email Address"
         android:inputType="textEmailAddress" />
     <EditText
         android:id="@+id/card"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/prect"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="320dp"
+        android:padding="10dp"
         android:hint="Card Number"
         android:inputType="textEmailAddress"
        />
     <EditText
         android:id="@+id/date"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:background="@drawable/prect"
         android:layout_marginLeft="40dp"
-        android:layout_marginRight="50dp"
         android:layout_marginTop="380dp"
+        android:padding="10dp"
         android:hint="Expiry Date"
         android:inputType="date"
         />
     <EditText
         android:id="@+id/cvc"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
+        android:layout_width="122dp"
+        android:layout_height="40dp"
+        android:background="@drawable/prect"
         android:layout_toRightOf="@id/date"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="380dp"
         android:hint="CVC"
-        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:inputType="text"
         android:textStyle="italic"/>
     <EditText
         android:id="@+id/address"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/prect"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="440dp"
         android:hint="Address Line1"
+        android:padding="10dp"
         android:inputType="textPostalAddress"
         />
     <EditText
         android:id="@+id/phone"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/prect"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="50dp"
         android:layout_marginTop="500dp"
         android:hint="Telephone"
+        android:padding="10dp"
         android:inputType="phone"
         />
 
@@ -144,14 +168,16 @@
         android:id="@+id/checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="560dp"
         android:defaultValue="false" />
 <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_toRightOf="@id/checkbox"
-    android:layout_marginTop="565dp"
+    android:layout_marginTop="567dp"
     android:layout_marginLeft="10dp"
+    android:textSize="13sp"
     android:text="By continuing you accept the Terms and Conditions"/>
 
 
@@ -171,7 +197,7 @@
         android:text="PAY Ksh.163,000"
         android:textColor="@color/btColor"
         android:paddingRight="50px"
-        android:textSize="20sp"
+        android:textSize="18sp"
         />
 
 </RelativeLayout>
