@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/second"
+    tools:context=".Login">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="53dp"
+        android:contextClickable="false"
+        android:gravity="center|center_vertical"
+        android:text="Welcome to"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <!--<ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="3dp"
+        android:layout_height="8dp"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/multiply" />-->
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="REAL RESOURCES"
+        android:textColor="#FF4500"
+        android:layout_margin="100dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|center_vertical"/>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:text="Email/Username"
+        android:textColor="#000000"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="20dp"
+
+
+        />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="300dp"
+        android:hint="someone@example.com"
+        android:inputType="textEmailAddress"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#000000"
+        android:layout_marginTop="380dp"
+        android:layout_marginLeft="50dp"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="440dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/ic_remove_red_eye_black_24dp"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center|center_vertical"
+        android:padding="5px"
+        android:shadowDy="@android:integer/config_longAnimTime"
+        android:text="Login"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center|center_vertical"
+        android:padding="5px"
+        android:shadowDy="@android:integer/config_longAnimTime"
+        android:text="Skip"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/btn_reset_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@null"
+        android:text="@string/btn_forgot_password"
+        android:layout_below="@+id/button2"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary" />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:layout_below="@+id/btn_reset_password"
+        android:textColor="#000000"
+        android:layout_marginLeft="50dp"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_toRightOf="@id/textView6"
+        android:layout_below="@+id/btn_reset_password"
+        android:textColor="#FF4500"
+        android:textSize="20dp"
+        android:gravity="start|center_vertical"/>
+    <!-- <TextView
+      android:id="@+id/textView8"
+      android:layout_width="220dp"
+      android:layout_height="wrap_content"
+      android:text="Register with"
+      android:layout_below="@id/textView7"
+      android:textColor="#000000"
+      android:textSize="20dp"
+      android:layout_marginLeft="50dp"
+      android:layout_marginTop="30dp"
+      android:gravity="start|center_vertical"/>
+
+       <com.google.android.gms.common.SignInButton
+       android:id="@+id/sign_in_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/textView7"
+       android:layout_marginLeft="200dp"
+       android:layout_marginTop="20dp"/>-->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

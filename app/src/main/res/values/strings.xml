@@ -4,4 +4,13 @@
     <string name="radio_Location">Deliver to Location</string>
     <string name="pesa">MPESA</string>
     <string name="pay">PayPal</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_link_to_login">Already registered? Login!</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_email">Email</string>
 </resources>

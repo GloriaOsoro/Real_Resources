@@ -1,4 +1,4 @@
-package com.example.realsources;
+package com.realsources.realsources;
 
 import org.junit.Test;
 

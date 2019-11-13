@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.realsources">
+    package="com.realsources.realsources">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Success"></activity>
-        <activity android:name=".Payment" />
-        <activity android:name=".Shipping" />
-        <activity android:name=".Cart" />
-        <activity android:name=".Profile" />
-        <activity android:name=".Wishlist" />
-        <activity android:name=".Quote" />
-        <activity android:name=".Settings" />
+        <activity android:name=".ResetPassword"></activity>
         <activity android:name=".Register" />
-        <activity android:name=".Home" />
         <activity android:name=".Login" />
+        <activity android:name=".Settings" />
+        <activity android:name=".Home" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

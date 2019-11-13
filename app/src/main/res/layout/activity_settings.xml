@@ -1,12 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Settings">
-<!--<include
-    android:id="@+id/mToolbar"
-    android:layout="@layout/toolbar"/>-->
+    tools:context=".Settings"
+    android:background="?attr/backgroundColor">
 
-</LinearLayout>
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="?attr/cardBackgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="?attr/textColor"
+                android:text="General"/>
+            <Switch
+                android:id="@+id/push"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Enable Push Notifications"
+                android:textColor="?attr/textColor"
+                android:checked="true"/> <!-- set the current state of the Switch-->
+            <Switch
+                android:id="@+id/other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Enable Sound In app"
+                android:textColor="?attr/textColor"
+                android:checked="true"/> <!-- set the current state of the Switch-->
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="?attr/textColor"
+                android:text="Other Settings"/>
+            <Switch
+                android:id="@+id/darkmode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Toggle Dark Mode"
+                android:textColor="?attr/textColor"
+                android:checked="false"/> <!-- set the current state of the Switch-->/>
+            <TextView
+                android:id="@+id/logout"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textColor="?attr/textColor"
+                android:clickable="true"
+                android:text="Logout"/>
+            <TextView
+                android:id="@+id/rate"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:clickable="true"
+                android:textColor="?attr/textColor"
+                android:text="Rate App"/>
+            <TextView
+                android:id="@+id/cache"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textColor="?attr/textColor"
+                android:clickable="true"
+                android:text="Clear App cache"/>
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textColor="?attr/textColor"
+                android:text="Version 2.0.0"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:itemBackground="?attr/bottonNavigationColor"
+        android:layout_marginStart="0dp"
+        app:menu="@menu/navigation" />
+
+
+</RelativeLayout>

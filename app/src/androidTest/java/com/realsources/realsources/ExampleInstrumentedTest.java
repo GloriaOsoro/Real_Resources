@@ -1,4 +1,4 @@
-package com.example.realsources;
+package com.realsources.realsources;
 
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;
