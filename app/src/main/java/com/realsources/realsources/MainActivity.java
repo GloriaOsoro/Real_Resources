@@ -1,14 +1,12 @@
 package com.example.realsources;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
     private Button button1;
@@ -30,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void openLogin(){
-        Intent intent =new Intent(this,Login.class);
+        Intent intent =new Intent(this,Home.class);
         startActivity(intent);
     }
 
